@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    background-color: #FFFAF5;
     font-family: var(--font-primary);
     font-size: 1.6rem;
 }
@@ -87,9 +88,10 @@ button {
 }
 
 /* Header */
+
 /* Navbar */
 .navbar {
-    margin: 26px 0 100px;
+    padding: 26px 0 100px;
 }
 
 .navbar__inner {
@@ -144,13 +146,13 @@ button {
 
 .hero__media {
     position: relative;
-    width: 52%;
+    width: 47%;
     min-height: 582px;
 }
 
 .hero__img-cat {
     position: absolute;
-    right: 171px;
+    left: 0;
     bottom: 94px;
     width: 388px;
     height: 488px;
@@ -175,7 +177,7 @@ button {
 
 .hero__bg-circle {
     position: absolute;
-    left: 0;
+    left: -58px;
     bottom: 103px;
 }
 
@@ -227,7 +229,17 @@ button {
     background-color: #C6E2FA;
 }
 
+.hero__info--heading {
+    color: #181E52;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
 .hero__info--long-vector {
+    margin-top: 7px;
     width: 118px;
     height: 4px;
     border-radius: 10px;
@@ -245,8 +257,12 @@ button {
 }
 
 .hero__content {
-    width: 44.2%;
+    width: 42.5%;
     min-height: 440px;
+}
+
+.hero__heading {
+    width: 517px;
 }
 
 .hero__desc {
