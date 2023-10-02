@@ -7,7 +7,7 @@
     --font-heading: 'Sora', sans-serif;
     --font-primary: 'Poppins', sans-serif;
     /* color */
-    --primary-color: #000958;
+    --primary-color--purple: #000958;
     --text-color-light-purple: #5E6085;
     --text-color-white: #FFF;
 }
@@ -47,6 +47,22 @@ button {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
+}
+
+.section-heading {
+    color: #000958;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+    /* 115.152% */
+}
+
+.section-desc {
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+    /* 187.5% */
 }
 
 .btn {
@@ -98,23 +114,180 @@ button {
 }
 
 .navbar__item:hover .navbar__item--link {
-    color: var(--primary-color);
+    color: var(--primary-color--purple);
     /* font-weight: 600; */
     text-shadow: 0 1px 0 currentColor;
 }
 
 .navbar__btn {
-    padding: 0 31px;
+    padding: 0 30px;
     max-width: 117px;
     height: 50px;
-    color: var(--primary-color);
+    color: var(--primary-color--purple);
     font-size: 1.4rem;
     font-weight: 600;
     border-radius: 25px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color--purple);
 }
 
 .navbar__btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color--purple);
     color: var(--text-color-white);
+}
+
+/* Hero */
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__media {
+    position: relative;
+    width: 52%;
+    min-height: 582px;
+}
+
+.hero__img-cat {
+    position: absolute;
+    right: 171px;
+    bottom: 94px;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    object-fit: cover;
+    background: #FFA78D;
+}
+
+.hero__img-dog {
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    object-fit: contain;
+    object-position: 0 24px;
+    background: #FAA7AD;
+}
+
+.hero__bg-circle {
+    position: absolute;
+    left: 0;
+    bottom: 103px;
+}
+
+.hero__bg-vectors {
+    position: absolute;
+    top: 16.66px;
+    right: 132.5px;
+}
+
+.hero__info {
+    position: absolute;
+    bottom: 0;
+    right: 172px;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__info--item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0 20px 14px;
+}
+
+.hero__info--vector {
+    display: block;
+    margin: 0 auto;
+    width: 222px;
+    height: 2px;
+    background: #F2F2F2;
+}
+
+.hero__info--img-heath,
+.hero__info--img-care {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hero__info--img-heath {
+    background-color: #FEC23F;
+}
+
+.hero__info--img-care {
+    background-color: #C6E2FA;
+}
+
+.hero__info--long-vector {
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: var(--primary-color--purple);
+}
+
+.hero__info--short-vector {
+    margin-top: 6px;
+    width: 39px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: var(--primary-color--purple);
+}
+
+.hero__content {
+    width: 44.2%;
+    min-height: 440px;
+}
+
+.hero__desc {
+    margin: 24px 0 38px;
+    width: 391px;
+}
+
+.hero__action {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero__action--link {
+    color: #000958;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    /* 100% */
+    text-decoration: underline;
+}
+
+.hero__btn {
+    padding: 0 29px;
+    width: 189px;
+    height: 60px;
+    border-radius: 31px;
+    color: #FFF;
+    background: #FF5B2E;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    cursor: pointer;
+}
+
+.hero__btn--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #FF5B2E;
 }
