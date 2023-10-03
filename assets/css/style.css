@@ -52,7 +52,7 @@ button {
 
 .section-heading {
     color: #000958;
-    font-size: 6.6rem;
+    font-size: 5.2rem;
     font-weight: 800;
     line-height: 1.15;
     /* 115.152% */
@@ -64,6 +64,15 @@ button {
     font-weight: 400;
     line-height: 1.875;
     /* 187.5% */
+}
+
+.section-title {
+    color: #5E6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
 }
 
 .btn {
@@ -262,6 +271,7 @@ button {
 }
 
 .hero__heading {
+    font-size: 6.6rem;
     width: 517px;
 }
 
@@ -306,4 +316,129 @@ button {
     border-radius: 50%;
     background-color: #FFF;
     color: #FF5B2E;
+}
+
+/* About */
+.about {
+    margin-top: 77px;
+    padding: 53px 0;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__content {
+    width: 41%;
+    min-height: 405px;
+}
+
+.about__heading {
+    margin: 15px 0 24px;
+}
+
+.about__item-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    background-color: #FF5D31;
+}
+
+.about__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: 233px 218px;
+    gap: 36px;
+}
+
+.about__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about__info-check {
+    color: #48496A;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    /* 100% */
+}
+
+.about__media {
+    position: relative;
+    width: 54.3%;
+    min-height: 559px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__img {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.about__bg-img {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    width: 494px;
+    height: 336px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
+
+.about__bg-vectors {
+    position: absolute;
+    right: 0;
+    top: 157px;
+}
+
+.about__sticker {
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 165px;
+    padding: 31px 26px 29px;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5BD6E2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__sticker-img {
+    position: absolute;
+    top: -38.2px;
+    right: -33px;
+}
+
+.about__sticker-number {
+    color: #FFF;
+    text-align: center;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+    /* 100% */
+}
+
+.about__sticker-content {
+    margin-top: 14px;
+    width: 83px;
+    color: #C6F4F9;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42;
+    /* 142.857% */
 }
