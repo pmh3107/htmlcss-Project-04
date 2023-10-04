@@ -442,3 +442,144 @@ button {
     line-height: 1.42;
     /* 142.857% */
 }
+
+/* Feature */
+.feature {
+    margin-top: 77px;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__media {
+    position: relative;
+    width: 42.73%;
+    min-height: 571px;
+}
+
+.feature__img {
+    width: 458px;
+    height: 500px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.feature__img-bg {
+    width: 458px;
+    height: 500px;
+    border-radius: 18px;
+    background-color: #c6e2fa;
+    background-image: linear-gradient(180deg, #c6e2fa 24%, #94c2ea 64%);
+}
+
+.feature__img,
+.feature__img-bg {
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.feature__bg-circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.feature__bg-smalltg {
+    position: absolute;
+    right: 61px;
+    bottom: 205px;
+    z-index: 1;
+}
+
+.feature__bg-tg {
+    position: absolute;
+    top: 284px;
+    right: 9px;
+    z-index: 1;
+}
+
+.feature__bg-rightVector {
+    position: absolute;
+    top: 49px;
+    right: 21px;
+    z-index: 1;
+}
+
+.feature__bg-centerVector {
+    position: absolute;
+    top: 0;
+    right: 55px;
+    z-index: 1;
+}
+
+.feature__bg-leftVector {
+    position: absolute;
+    top: 28.5px;
+    right: 105px;
+    z-index: 1;
+}
+
+.feature__content {
+    width: 47.6%;
+    min-height: 459px;
+}
+
+.feature__heading {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.feature__list {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature__introduce {
+    width: 391px;
+    margin: 36px 0 32px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+    /* 171.429% */
+}
+
+.feature__item-vector {
+    margin-top: 10px;
+    width: 95px;
+    height: 2px;
+    background: #FF5B2E;
+    border-radius: 999px;
+}
+
+.feature__item-vector::after {
+    content: "";
+    display: block;
+    width: 557px;
+    height: 2px;
+    opacity: 0.07;
+    background: #FF5B2E;
+    border-radius: 999px;
+}
+
+.feature__view-more {
+    color: #FF5D31;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border-bottom: 2px solid #FF5D31;
+    /* 100% */
+}
