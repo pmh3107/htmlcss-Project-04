@@ -583,3 +583,135 @@ button {
     border-bottom: 2px solid #FF5D31;
     /* 100% */
 }
+
+/* Service */
+.service {
+    margin-top: 130px;
+    padding: 68px 0 100px;
+    background-color: #FFF6ED;
+}
+
+.service__top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 71px;
+}
+
+.service__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 25.12%;
+}
+
+.service__item {
+    width: 100%;
+    height: 208px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #FFF;
+}
+
+.service__item-body {
+    padding: 30px 0 30px 28px;
+}
+
+.service__item-heading {
+    position: relative;
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-left: 12px;
+    /* 100% */
+}
+
+.service__item-heading::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 2px;
+    height: 22px;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+
+}
+
+.service__item-desc {
+
+    width: 244px;
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+    /* 171.429% */
+}
+
+.service__item-more {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.service__item-link {
+    display: block;
+    color: #34396A;
+    font-family: Sora;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    /* 100% */
+}
+
+.service__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 621px;
+    width: 37.6%;
+}
+
+.service__media-body {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    min-height: 621px;
+    flex-shrink: 0;
+}
+
+.service__imgCenter {
+    position: absolute;
+    bottom: 28px;
+    width: 460px;
+    height: 621px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.service__img-bg {
+    position: absolute;
+    bottom: 28px;
+    left: 22px;
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+}
+
+.service-btn {
+    width: 214px;
+    height: 56px;
+    background-color: transparent;
+    padding: 0 39px;
+    /* 100% */
+}
