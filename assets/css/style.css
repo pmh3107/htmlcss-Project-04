@@ -713,5 +713,101 @@ button {
     height: 56px;
     background-color: transparent;
     padding: 0 39px;
+    cursor: pointer;
     /* 100% */
+}
+
+.service-btn:hover {
+    color: var(--text-color-white);
+    background-color: #FF5B2E;
+}
+
+/* Team */
+.team {
+    margin: 30px 0;
+    padding: 100px 0;
+}
+
+.team__top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.team__list {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22.7%;
+    min-height: 383px;
+    flex-shrink: 0;
+}
+
+.team__item--media {
+    position: relative;
+    width: 251px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+}
+
+.team__item-avatar {
+    position: absolute;
+    width: 251px;
+    height: 290px;
+    object-fit: contain;
+}
+
+.team__item-bg {
+    position: absolute;
+}
+
+.team__item-bg.team__item-bgUp {
+    bottom: 0;
+}
+
+.team__item-bg.team__item-bgDown {
+    top: 19px;
+}
+
+.team__item-position {
+    margin-top: 29px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    /* 100% */
+}
+
+.team__item-name {
+    margin-top: 14px;
+    color: #000958;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.team__action {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.team__btn {
+    background-color: transparent;
+}
+
+.team__btn:hover {
+    color: var(--text-color-white);
+    background-color: #FF5B2E;
 }
