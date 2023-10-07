@@ -94,6 +94,8 @@ button {
 
 .btn:hover {
     box-shadow: 0px 13px 26px -8px rgba(0, 0, 0, 0.42);
+    color: var(--text-color-white);
+    background-color: #FF5B2E;
 }
 
 /* Header */
@@ -300,11 +302,11 @@ button {
     width: 189px;
     height: 60px;
     border-radius: 31px;
-    color: #FFF;
-    background: #FF5B2E;
-    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: #FF5B2E;
+    background: #FFF;
     cursor: pointer;
 }
+
 
 .hero__btn--img {
     display: flex;
@@ -316,6 +318,7 @@ button {
     border-radius: 50%;
     background-color: #FFF;
     color: #FF5B2E;
+    border: 1px solid #FF5B2E;
 }
 
 /* About */
@@ -717,11 +720,6 @@ button {
     /* 100% */
 }
 
-.service-btn:hover {
-    color: var(--text-color-white);
-    background-color: #FF5B2E;
-}
-
 /* Team */
 .team {
     margin: 30px 0;
@@ -807,7 +805,154 @@ button {
     background-color: transparent;
 }
 
-.team__btn:hover {
+/* Pricing */
+.price {
+    padding: 86px 0;
+    background: #FFF6ED;
+}
+
+.price__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.price__desc {
+    text-align: center;
+    width: 709px;
+    margin: 24px 0 38px;
+}
+
+.price__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 33px;
+    position: relative;
+    border-radius: 31px;
+    width: 276px;
+    height: 56px;
+    border: 1px solid #FF5B2E;
+    cursor: pointer;
+}
+
+.price_btn-name {
+    color: #FF5B2E;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: color 0.5s ease;
+    /* 100% */
+}
+
+.price__action * {
+    z-index: 2;
+}
+
+.price__action .price__input[type="radio"] {
+    display: none;
+}
+
+.price__action--active {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 131px;
+    height: 56px;
+    border-radius: 31px;
+    background: #FF5B2E;
+    transition: 0.5s ease;
+}
+
+.price__input[type="radio"]:checked+label {
     color: var(--text-color-white);
-    background-color: #FF5B2E;
+}
+
+.price__input[id="Yearly"]:checked~.price__action--active {
+    transform: translateX(0);
+}
+
+.price__input[id="Monthly"]:checked~.price__action--active {
+    transform: translateX(-110%);
+}
+
+.price__list {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+}
+
+.price__item {
+    width: 302px;
+    height: 465px;
+    border-radius: 20px;
+    background: #FFF;
+    transition: ease 0.5s;
+}
+
+.price__item:hover {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.price__item--body {
+    padding: 30px 28px 43px;
+}
+
+.price__item--title {
+    color: #FF5B2E;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    /* 100% */
+}
+
+.price__item--heading {
+    margin: 8px 0 24px;
+    color: #3F4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.price__item-number {
+    color: #000958;
+    font-family: Sora;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    /* 103.03% */
+}
+
+.price__item--btn {
+    margin-top: 22px;
+    max-width: 246px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.price__item--features {
+    margin-top: 24px;
+}
+
+.item__features {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.item__feature {
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    /* 100% */
 }
