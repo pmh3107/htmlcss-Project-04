@@ -1182,3 +1182,149 @@ button {
     line-height: 24px;
     /* 171.429% */
 }
+
+/* footer */
+.footer__container {
+    display: flex;
+}
+
+.footer__content {
+    min-width: 615px;
+    height: 516px;
+    background: #FFF6ED;
+}
+
+.footer__body {
+    padding-top: 114px;
+    padding-left: 135px;
+}
+
+.footer__form-submit {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__email {
+    padding-left: 20px;
+    width: 268px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    opacity: 0.6;
+    background: #FFF;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+}
+
+.footer__email:focus {
+    outline: none;
+}
+
+.footer__email::placeholder {
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+    /* 116.667% */
+}
+
+.footer__submit {
+    margin-left: -46px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-color: #FF5B2E;
+    border: 1px solid #FF5B2E;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.footer__follow {
+    margin-top: 68px;
+}
+
+.footer__title {
+    margin-bottom: 16px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.1;
+    /* 111.111% */
+}
+
+.footer__icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer__icon--bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.footer__menu {
+    width: 524px;
+    height: 350px;
+    margin: 52px 0 0 129px;
+}
+
+.footer__row1,
+.footer__row2 {
+    display: flex;
+}
+
+.footer__row1 {
+    gap: 225px;
+}
+
+.footer__row2 {
+    margin-top: 58px;
+    gap: 137px;
+}
+
+.footer__list-title {
+    margin-bottom: 14px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.1;
+    /* 111.111% */
+}
+
+.footer__item--link {
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    /* 200% */
+}
+
+.footer__copyRight {
+    margin-top: -48px;
+    display: block;
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.16;
+    opacity: 0.5;
+    text-align: center;
+    /* 116.667% */
+}
