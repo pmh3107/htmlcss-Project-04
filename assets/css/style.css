@@ -864,7 +864,14 @@ button {
     height: 56px;
     border-radius: 31px;
     background: #FF5B2E;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
+}
+
+.price__discount {
+    display: none;
+    position: absolute;
+    right: -106px;
+    bottom: 30px;
 }
 
 .price__input[type="radio"]:checked+label {
@@ -877,6 +884,10 @@ button {
 
 .price__input[id="Monthly"]:checked~.price__action--active {
     transform: translateX(-110%);
+}
+
+.price__input[id="Yearly"]:checked~.price__discount {
+    display: block;
 }
 
 .price__list {
@@ -955,4 +966,122 @@ button {
     font-weight: 400;
     line-height: 1;
     /* 100% */
+}
+
+/* Reviews */
+.review {
+    margin: 53px 0 130px;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review__item {
+    display: flex;
+    align-items: center;
+    gap: 115px;
+}
+
+.review__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #FF5B2E;
+    border: 1px solid rgba(255, 91, 46, 0.5);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.review__btn__left {
+    transform: rotate(180deg);
+}
+
+.review__btn:hover {
+    background-color: #FF5B2E;
+    color: #FFF;
+}
+
+.review__media {
+    position: relative;
+    width: 274px;
+    height: 427px;
+}
+
+.review__img {
+    position: absolute;
+    bottom: 0;
+    width: 274px;
+    height: 427px;
+    border-radius: 0 0 137px 137px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.review__img--bg {
+    position: absolute;
+    bottom: 0;
+    width: 274px;
+    height: 350px;
+    border-radius: 137px;
+    background: #FFDA54;
+}
+
+.review__desc {
+    margin: 24px 0 34px;
+    width: 553px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.556;
+    /* 155.556% */
+}
+
+.review__name {
+    display: flex;
+    align-items: center;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.review__name::before {
+    margin-right: 8px;
+    position: relative;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.review__page {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.review__point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #FF5B2E;
+}
+
+.active {
+    width: 24px;
+    background-color: #FF5B2E;
+    border-radius: 999px;
 }
